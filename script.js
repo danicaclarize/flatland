@@ -8,7 +8,7 @@ square.addEventListener('click', (event) => changeColour('green'));
 
 /* create hover effect*/
 square.addEventListener('mouseover', (event) => changeColour('green'));
-square.addEventListener('mouseout', (event) changeColour('red'));
+square.addEventListener('mouseout', (event) => changeColour('red'));
 
 
 function createBuzzwordPhrase() {
