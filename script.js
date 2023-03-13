@@ -1,7 +1,7 @@
 var square = document.getElementById('square');
 
 function changeColour(color) {
-    square.background = colour;
+    square.style.background = colour;
 }
 
 square.addEventListener('click', (event) => changeColour('green'));
