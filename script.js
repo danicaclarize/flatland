@@ -1,4 +1,10 @@
 var square = document.getElementById('square');
+var words = document.getElementById('words');
+
+function greeting() {
+        words.innerHTML = "Welcome to Flatland <br>"
+}
+
 
 function changeColour(colour) {
     square.style.background = colour;
@@ -10,6 +16,13 @@ square.addEventListener('click', (event) => changeColour('green'));
 square.addEventListener('mouseover', (event) => changeColour('grey'));
 square.addEventListener('mouseout', (event) => changeColour('red'));
 
+
+var words = document.getElementById('words');
+function greeting() {
+    words.innerHTML = "Welcome to Flatland <br> I am Square!"
+}
+
+document.onload = greeting()
 
 function createBuzzwordPhrase() {
     /* See https://en.wikipedia.org/wiki/List_of_buzzwords */
@@ -25,4 +38,4 @@ function createBuzzwordPhrase() {
 }
 
 
-console.log(createBuzzwordPhrase()) /*f12 use () to call the function*/ 
+console.log(createBuzzwordPhrase()); /*f12 use () to call the function*/ 
