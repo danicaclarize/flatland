@@ -10,6 +10,11 @@ function changeColour(colour) {
     square.style.background = colour;
 }
 
+function clicked() {
+    var msg = "Build a <br>" + createBuzzwordPhrase();
+    words.innerHTML = msg;
+}
+
 square.addEventListener('click', (event) => changeColour('green'));
 
 /* create hover effect*/
@@ -19,10 +24,10 @@ square.addEventListener('mouseout', (event) => changeColour('red'));
 
 var words = document.getElementById('words');
 function greeting() {
-    words.innerHTML = "Welcome to Flatland <br> I am Square!"
+    words.innerHTML = "Welcome to Flatland <br> I am Square!";
 }
 
-document.onload = greeting()
+document.onload = greeting();
 
 function createBuzzwordPhrase() {
     /* See https://en.wikipedia.org/wiki/List_of_buzzwords */
