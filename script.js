@@ -14,7 +14,9 @@ function clicked() {
     
     //var msg = "Build a <br>" + createBuzzwordPhrase();
     //words.innerHTML = msg;
-    words.innerHTML = "Build a<br>" +createBuzzwordPhrase();
+    var msg = "Build a <br>" + createBuzzwordPhrase();
+    words.innerHTML = msg;
+    //words.innerHTML = "Build a<br>" +createBuzzwordPhrase();
 }
 
 square.addEventListener('click', (event) => changeColour('green'));
@@ -29,6 +31,7 @@ function greeting() {
     words.innerHTML = "Welcome to Flatland <br> I am Square!";
 }
 
+// Call greeting function when document is loaded
 document.onload = greeting();
 
 function createBuzzwordPhrase() {
@@ -45,4 +48,5 @@ function createBuzzwordPhrase() {
 }
 
 
-console.log(createBuzzwordPhrase()); /*f12 use () to call the function*/ 
+// Test the createBuzzwordPhrase function by calling it in the console
+console.log(createBuzzwordPhrase()); // Use () to call the function
