@@ -25,4 +25,4 @@ function createBuzzwordPhrase() {
 }
 
 
-console.log(createBuzzwordPhrase)
+console.log(createBuzzwordPhrase()) /*f12 use () to call the function*/ 
