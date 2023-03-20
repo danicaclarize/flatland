@@ -11,8 +11,10 @@ function changeColour(colour) {
 }
 
 function clicked() {
-    var msg = "Build a <br>" + createBuzzwordPhrase();
-    words.innerHTML = msg;
+    
+    //var msg = "Build a <br>" + createBuzzwordPhrase();
+    //words.innerHTML = msg;
+    words.innerHTML = "Builda<br>" +createBuzzwordPhrase();
 }
 
 square.addEventListener('click', (event) => changeColour('green'));
