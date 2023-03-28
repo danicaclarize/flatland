@@ -1,6 +1,5 @@
 var square = document.getElementById('square');
 var words = document.getElementById('words');
-var words = document.getElementById('words');
 
 
 
@@ -11,7 +10,6 @@ function changeColour(colour) {
     square.style.background = colour;
 }
 function clicked() {
-    
     //var msg = "Build a <br>" + createBuzzwordPhrase();
     //words.innerHTML = msg;
     var msg = "Build a <br>" + createBuzzwordPhrase();
