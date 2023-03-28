@@ -28,7 +28,7 @@ square.addEventListener('mouseout', (event) => changeColour('red'));
 
 
 // Call greeting function when document is loaded
-document.onload = greeting();
+document.onload = greeting()
 
 function createBuzzwordPhrase() {
     /* See https://en.wikipedia.org/wiki/List_of_buzzwords */
