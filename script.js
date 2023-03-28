@@ -2,7 +2,7 @@ var square = document.getElementById('square');
 var words = document.getElementById('words');
 
 
-
+// 2. Create Fuctionality
 function greeting() {
         words.innerHTML = "Welcome to Flatland <br> I am square";
 }
@@ -15,15 +15,6 @@ function clicked() {
     words.innerHTML = "Build a <br>" + createBuzzwordPhrase();
 
 }
-
-square.addEventListener('click', (event) => changeColour('green'));
-
-/* create hover effect*/
-square.addEventListener('mouseover', (event) => changeColour('grey'));
-square.addEventListener('mouseout', (event) => changeColour('red'));
-
-
-
 // Call greeting function when document is loaded
 document.onload = greeting()
 
@@ -39,7 +30,13 @@ function createBuzzwordPhrase() {
 
     return  buzz[idx_buz] + " " + action[idx_act] + " " + outcome[idx_out];
 }
-
-
+// 3. Add an event listener
 // Test the createBuzzwordPhrase function by calling it in the console
 console.log(createBuzzwordPhrase()); // Use () to call the function
+
+
+square.addEventListener('click', (event) => clicked());
+
+/* create hover effect*/
+square.addEventListener('mouseover', (event) => changeColour('grey'));
+square.addEventListener('mouseout', (event) => changeColour('red'));
