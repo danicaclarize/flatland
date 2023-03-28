@@ -1,15 +1,15 @@
 var square = document.getElementById('square');
 var words = document.getElementById('words');
+var words = document.getElementById('words');
+
+
 
 function greeting() {
-        words.innerHTML = "Welcome to Flatland <br>"
+        words.innerHTML = "Welcome to Flatland <br> I am square";
 }
-
-
 function changeColour(colour) {
     square.style.background = colour;
 }
-
 function clicked() {
     
     //var msg = "Build a <br>" + createBuzzwordPhrase();
@@ -26,10 +26,6 @@ square.addEventListener('mouseover', (event) => changeColour('grey'));
 square.addEventListener('mouseout', (event) => changeColour('red'));
 
 
-var words = document.getElementById('words');
-function greeting() {
-    words.innerHTML = "Welcome to Flatland <br> I am Square!";
-}
 
 // Call greeting function when document is loaded
 document.onload = greeting();
